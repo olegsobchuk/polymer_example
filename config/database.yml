@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: password
+  host: localhost
+
+development:
+  <<: *default
+  database: polymer_example_development
+
+test:
+  <<: *default
+  database: polymer_example_test
+
+production:
+  <<: *default
+  database: polymer_example_production
