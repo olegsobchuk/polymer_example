@@ -1,0 +1,10 @@
+- name = 'post-service'
+polymer-element name="#{name}" attributes='users'
+  template
+    link rel="stylesheet" href="#{name}.css"
+    | Includes .................
+    template repeat="{{user in users}}"
+      | I wrote {{user.email}}
+      br
+
+  script src="#{name}.js"

@@ -1,12 +1,14 @@
-polymer-element name='ex-user' attributes='name email'
+- name = 'ex-user'
+polymer-element name="#{name}" attributes='name email'
   template
-    link rel='stylesheet' href='ex-user.css'
-    .card-header layout='' horizontal='' center=''
-      content select='img'
+    link rel='stylesheet' href="#{name}.css"
+    .card-heade layout='' horizontal='' center=''
+      content select='h1'
       content select='h2'
-    content
 
     h2 Ex user
     h3 Test
+    content
+    hr
 
-  script src='ex-user.js'
+  script src="#{name}.js"
