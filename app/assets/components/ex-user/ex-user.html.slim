@@ -10,5 +10,8 @@ polymer-element name="#{name}" attributes='name email'
     h3 Test
     content
     hr
+    div
+      | {{inputVal ? inputVal : "Here your value"}}
+    input type='text' value='{{inputVal}}' focus='true'
 
   script src="#{name}.js"
