@@ -1,14 +1,19 @@
 - name = 'post-service'
 polymer-element name="#{name}" attributes='users' id='test_id'
+  script src="#{name}.js"
   template
     link rel="stylesheet" href="#{name}.css"
     div
       | Includes .................
     div
       | {{users | keys}}
+    div
+      | users length is {{users.length}}
     br
-    template repeat="{{user in users}}"
+    template repeat="{{user in users}}" if='{{users.length >= 3}}'
       | I wrote {{user.email}}
       br
 
-  script src="#{name}.js"
+    template bind ref="users"
+      | When creating an instance, the content of this template will be ignored,
+      | and the content of #myTemplate is used instead.

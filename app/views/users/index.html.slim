@@ -4,6 +4,6 @@ ex-user
   h2= @users.first.first_name
   h1 test red
   h1 0000
-
-  | Just text
-post-service users=@users.to_json
+  | Insert enother component (element)
+  post-service users=@users.to_json if='{{users.length > 4}}'
+  #users
