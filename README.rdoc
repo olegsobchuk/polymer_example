@@ -1,7 +1,9 @@
 == README
 
 Lificycle methods:
+
 https://www.polymer-project.org/docs/polymer/polymer.html#lifecyclemethods
+
 Polymer('tag-name', {
   created: function() { ... },
   ready: function() { ... },
