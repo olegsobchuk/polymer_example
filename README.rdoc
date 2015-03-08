@@ -1,28 +1,14 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Lificycle methods:
+https://www.polymer-project.org/docs/polymer/polymer.html#lifecyclemethods
+Polymer('tag-name', {
+  created: function() { ... },
+  ready: function() { ... },
+  attached: function () { ... },
+  domReady: function() { ... },
+  detached: function() { ... },
+  attributeChanged: function(oldVal, newVal, entireObject) {
+    console.log(entireObject, 'old: ' + oldVal, 'new:', newVal);
+  },
+});

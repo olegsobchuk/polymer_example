@@ -11,7 +11,7 @@ polymer-element name="#{name}" attributes='name email'
     content
     hr
     div
-      | {{inputVal ? inputVal : "Here your value"}}
+      | {{inputVal || "Here your value"}}
     input type='text' value='{{inputVal}}' focus='true'
 
   script src="#{name}.js"

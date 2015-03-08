@@ -13,7 +13,3 @@ polymer-element name="#{name}" attributes='users' id='test_id'
     template repeat="{{user in users}}" if='{{users.length >= 3}}'
       | I wrote {{user.email}}
       br
-
-    template bind ref="users"
-      | When creating an instance, the content of this template will be ignored,
-      | and the content of #myTemplate is used instead.
