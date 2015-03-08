@@ -1,14 +1,16 @@
 == README
 
 Lificycle methods:
+
 https://www.polymer-project.org/docs/polymer/polymer.html#lifecyclemethods
-Polymer('tag-name', {
-  created: function() { ... },
-  ready: function() { ... },
-  attached: function () { ... },
-  domReady: function() { ... },
-  detached: function() { ... },
-  attributeChanged: function(oldVal, newVal, entireObject) {
-    console.log(entireObject, 'old: ' + oldVal, 'new:', newVal);
-  },
-});
+
+  Polymer('tag-name', {
+    created: function() { ... },
+    ready: function() { ... },
+    attached: function () { ... },
+    domReady: function() { ... },
+    detached: function() { ... },
+    attributeChanged: function(oldVal, newVal, entireObject) {
+      console.log(entireObject, 'old: ' + oldVal, 'new:', newVal);
+    },
+  });
